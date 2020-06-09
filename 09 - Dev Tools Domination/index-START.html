@@ -18,28 +18,59 @@
     }
 
     // Regular
+    console.log('hello');
+    
 
     // Interpolated
-
+    console.log('oh hi %s', 'mark');
+    
     // Styled
+    console.log('%c everything is awesome', 'font-size: 20px; background: blue');
+    
 
     // warning!
+    console.warn('f');
+    
 
     // Error :|
+    console.error('frick');
+    
 
     // Info
+    console.info('blemc');
 
     // Testing
+    console.assert(1 === 'a', "wrong")
 
     // clearing
+    //console.clear()
 
     // Viewing DOM Elements
+    console.log(document.querySelector('p'));
+    
 
     // Grouping together
+    dogs.forEach(dog => {
+      console.groupCollapsed(`${dog.name}`);
+      //console.group(`${dog.name}`);
+      console.log(`this is ${dog.name}`);
+      console.log(`this is ${dog.age}`);
+      console.log(`this is ${dog.age * 7}`);
+      console.groupEnd(`${dog.name}`)
+    });
 
     // counting
+    console.count('hung')
+    console.count('hung')
+    console.count('blemc')
+    console.count('blemc')
+    console.count('blemc')
+    console.count('hung')
+    console.count('hung')
 
     // timing
+    console.time('fetching data');
+    console.timeEnd('fetching data');
 
   </script>
 </body>
